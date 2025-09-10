@@ -24,8 +24,11 @@ public class App {
         }
         System.out.println(mireverse);
         System.out.println("Задание №3");
+        System.out.println("Enter a:");
         int a = (new Scanner(System.in)).nextInt();
+        System.out.println("Enter b:");
         int b = (new Scanner(System.in)).nextInt();
+        System.out.println("Enter c:");
         int c = (new Scanner(System.in)).nextInt();
         double Disc = (b*b - 4 * a * c);
         if (Disc > 0){
@@ -40,6 +43,17 @@ public class App {
         }
         else {
             System.out.println("Вещественных корней нет");
+        }
+        
+        System.out.println("Задание №5");
+        String Palindrom = (new Scanner(System.in)).nextLine();
+
+        String PalindromReverse = "";
+        for(int i = Palindrom.length() - 1; i >=0;i--){
+            PalindromReverse += Palindrom.charAt(i);
+        }
+        if(Palindrom.equals(PalindromReverse)){
+            System.out.printf("Строка: %s верная \n", PalindromReverse);
         }
     }
 }
