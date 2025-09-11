@@ -44,6 +44,23 @@ public class App {
         else {
             System.out.println("Вещественных корней нет");
         }
+
+
+        System.out.println("Задание №4");
+        double sum = 0.0;
+        int n = 2;
+        double EPSILON = 1e-6;
+
+        while (true) {
+            double temp = 1.0 / (n * n + n - 2);
+            if (temp < EPSILON) {
+                break;
+            }
+            sum += temp;
+            n++;
+        }
+
+        System.out.println("Сумма ряда: " + sum);
         
         System.out.println("Задание №5");
         String Palindrom = (new Scanner(System.in)).nextLine();
@@ -53,7 +70,9 @@ public class App {
             PalindromReverse += Palindrom.charAt(i);
         }
         if(Palindrom.equals(PalindromReverse)){
-            System.out.printf("Строка: %s верная \n", PalindromReverse);
+            System.out.printf("Строка %s является палиндромом \n", PalindromReverse);
+        } else {
+            System.out.printf("Строка %s не является палиндромом \n", Palindrom);
         }
     }
 }
