@@ -2,7 +2,6 @@
 
 public class App {
     public static int tribonacci(int n){
-        int result = 1;
         if(0 <= n && n <= 1) {
             return(0);
         } else if (n == 2) {
