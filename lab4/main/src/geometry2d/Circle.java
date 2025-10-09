@@ -1,9 +1,14 @@
 package geometry2d;
 
+import Exceptions.InvalidRadiusException;
+
 public class Circle implements Figure {
     private double radius;
 
-    public Circle(double radius) {
+    public Circle(double radius) throws InvalidRadiusException {
+        if (radius <= 0) {
+            throw new InvalidRadiusException("Радиус должен быть положительным числом.");
+        }
         this.radius = radius;
     }
 

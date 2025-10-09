@@ -1,12 +1,16 @@
 package geometry3d;
 
+import Exceptions.InvalidHeightException;
 import geometry2d.Figure;
 
 public class Cylinder {
     private Figure base; 
     private double height;
 
-    public Cylinder(Figure base, double height) {
+    public Cylinder(Figure base, double height) throws InvalidHeightException {
+        if (height <= 0) {
+            throw new InvalidHeightException("Высота цилиндра должна быть положительной.");
+        }
         this.base = base;
         this.height = height;
     }

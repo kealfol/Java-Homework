@@ -5,6 +5,9 @@ public class Rectangle implements Figure {
     private double height;
 
     public Rectangle(double width, double height) {
+        if (width <= 0 || height <= 0) {
+            throw new IllegalArgumentException("Ширина и высота должны быть положительными числами.");
+        }
         this.width = width;
         this.height = height;
     }
