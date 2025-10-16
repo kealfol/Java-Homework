@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2025-10-16T11:01:15.148504600Z</date>
+  <millis>1760612475148</millis>
+  <nanos>504600</nanos>
+  <sequence>2</sequence>
+  <logger>geometry2d.Circle</logger>
+  <level>SEVERE</level>
+  <class>geometry2d.Circle</class>
+  <method>&lt;init&gt;</method>
+  <thread>3</thread>
+  <message>Создан круг с радиусом 5</message>
+</record>
+</log>
